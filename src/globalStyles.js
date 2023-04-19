@@ -1,4 +1,5 @@
 import styled,{createGlobalStyle} from "styled-components";
+import { reverseBackgroundColor, backgroundColor } from "./data/GlobalData"; // importando estilos globais  de globaldata
 
 const GlobalStyle = createGlobalStyle`
 
@@ -23,13 +24,13 @@ export const Container = styled.div`
 export const Section = styled.div`
   color: #FFF;
   padding: 160px;
-  background: ${({inverse})=> (inverse ? '#FFF' : '#020305')}; // se inverse for true sera #FFF se for false será #020305
+  background: ${({inverse})=> (inverse ? backgroundColor : reverseBackgroundColor)}; // se inverse for true sera #FFF se for false será #020305
 `
 
 export const MainHeading = styled.h1`
   font-size: clamp(2.3rem, 6vw, 4.5rem); // esse clamp é tipo uma media entre min e max ver em https://desenvolvimentoparaweb.com/css/textos-responsivos-com-css-clamp/
   margin-bottom: 2rem;
-  color: ${({inverse}) => (inverse ? '#020305' : '#FFF')};
+  color: ${({inverse}) => (inverse ? reverseBackgroundColor : backgroundColor)};
   width: 100%;
   letter-spacing: 4px;
   text-align: center;
