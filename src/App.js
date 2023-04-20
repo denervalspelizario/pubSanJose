@@ -1,3 +1,8 @@
+import React from "react";
+import GlobalStyle from './globalStyles';
+import HomePages from "./pages/HomePages";
+import SignupPages from "./pages/SignupPages";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 
@@ -6,9 +11,14 @@
 
 function App() {
   return (
-    <div className="App">
-      <h1>Ola mundo</h1>
-    </div>
+   <Router>
+    <GlobalStyle />
+    <Routes>
+      <Route exact path="/" element={<HomePages />} />
+      <Route path="/sign-up" element={<SignupPages />} />    
+    </Routes>
+   </Router> 
+   
   );
 }
 
