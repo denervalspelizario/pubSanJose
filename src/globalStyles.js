@@ -41,7 +41,7 @@ export const MainHeading = styled.h1`
 `
 ;
 
-export const Button = styled.button`
+export const Button = styled.button` // botao 
   border-radius: 4px;
   background: none;
   white-space: space nowrap;
@@ -56,7 +56,8 @@ export const Button = styled.button`
   overflow: hidden; // para ocultar oque passar
   transition: all 0.5s;
 
-  &:before {
+  // CRIAÇÃO DO EFEITO DE FLIP AO PASSAR O MOUSE
+  &:before {              
     background: #d12d2d;
     content: '';
     position: absolute;
