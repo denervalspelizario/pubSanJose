@@ -12,19 +12,23 @@ import {
   NavItem,
   NavIcon
 } from './NavbarStyles.js'
-import { animateScroll as scroll } from 'react-scroll'  // a funcao animatedScrool será apelidada scroll
-import { websiteName } from '../../data/GlobalData'
+import { animateScroll as scroll } from 'react-scroll'  // a funcao animatedScrool para scrollar será apelidada scroll
+import { websiteName } from '../../data/GlobalData' // importando dado do globaldata
 import { navbarData } from '../../data/NavbarData.js'; 
 
 function Navbar({ hide }){
 
   const [show, setShow] = useState(false);
 
-  return <Nav hide={hide}>
+  return <Nav 
+      hide={hide}  // componente Nav com hide true olhar o navbarStyles
+    >
     <NavbarContainer>
-      <NavLogo to='/' onClick={scroll.scrollToTop}>
+      <NavLogo to='/' 
+        onClick={scroll.scrollToTop} // ao clicar chama funcao scrollToTop que joga rola pagina para o topo
+      >
         <NavIcon  src='./assets/logo.svg' />
-        {websiteName}
+        {websiteName} 
       </NavLogo>
 
       {!hide && (
@@ -34,9 +38,15 @@ function Navbar({ hide }){
               {show? <FaTimes/> : <CgMenuRight/>} 
             </MobileIcon>
           </IconContext.Provider>
-          <NavMenu hide={hide} show={show}>
-            {navbarData.map((el, index) => (
-              <NavItem key={index}>
+          <NavMenu 
+            hide={hide}  // componente NavMenu com hide true olhar o navbarStyles
+            show={show}  // recebendo valor de state que inicia como false
+          >
+            {navbarData.map((el, index) => ( // renderizando todos objetos de array de navbarData
+                                             // index = key e el = dados do objeto 
+              <NavItem 
+                key={index}  // recendo uma key de cada onjeto da array
+              >
                 <NavLinks 
                   spy={true}
                   duration={500}

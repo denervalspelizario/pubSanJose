@@ -1,5 +1,5 @@
 import styled,{createGlobalStyle} from "styled-components";
-import { reverseBackgroundColor, backgroundColor } from "./data/GlobalData"; // importando estilos globais  de globaldata
+import { light, dark } from "./data/GlobalData"; // importando estilos globais  de globaldata
 
 const GlobalStyle = createGlobalStyle` // será exportada la embaixo com export default GlobalStyle
 
@@ -27,19 +27,18 @@ export const Container = styled.div`
 export const Section = styled.div`
   color: #FFF;
   padding: 160px;
-  background: ${({inverse})=> (inverse ? backgroundColor : reverseBackgroundColor)}; // se inverse for true sera #FFF se for false será #020305
+  background: ${({inverse})=> (inverse ? light : dark)}; // se inverse for true sera #FFF se for false será #020305
 `
 ;
 
 export const MainHeading = styled.h1`
   font-size: clamp(2.3rem, 6vw, 4.5rem); // esse clamp é tipo uma media entre min e max ver em https://desenvolvimentoparaweb.com/css/textos-responsivos-com-css-clamp/
   margin-bottom: 2rem;
-  color: ${({inverse}) => (inverse ? reverseBackgroundColor : backgroundColor)};
+  color: ${({inverse}) => (inverse ? light : dark)};
   width: 100%;
   letter-spacing: 4px;
   text-align: center;
-`
-;
+`;
 
 export const Button = styled.button` // botao 
   border-radius: 4px;
@@ -56,7 +55,7 @@ export const Button = styled.button` // botao
   overflow: hidden; // para ocultar oque passar
   transition: all 0.5s;
 
-  // CRIAÇÃO DO EFEITO DE FLIP AO PASSAR O MOUSE
+  // CRIAÇÃO DO EFEITO DE FLIP AO PASSAR O MOUSE TODA A ESTRUTURA DO BEFORE - HOVER:BEFORE - HOVER
   &:before {              
     background: #d12d2d;
     content: '';
@@ -68,8 +67,8 @@ export const Button = styled.button` // botao
     transition: all 0.6s ease;
     width: 102%;
     height: 0%;
-
   }
+  
   &:hover:before{
     height: 200%;
   }

@@ -1,11 +1,11 @@
 export const infoData = {
-	headline: 'We have been doing for 11 years',
+	headline: "Nós temos feito isso por 11 anos.",
 	description:
-		'We help you create unforgettable memories through multi-sensorial experiences. Including art, technology, music events pushed beyond every limit. We believe in helping people find the most exciting events in their lives.',
+	"Nós ajudamos você a criar memórias inesquecíveis por meio de experiências multisensoriais, incluindo arte, tecnologia e eventos musicais que ultrapassam todos os limites. Acreditamos em ajudar as pessoas a encontrar os eventos mais emocionantes em suas vidas.",
 
 	bottomLine: [
-		{ number: '5320+', numberText: 'Clients' },
-		{ number: '350+', numberText: 'Awards' },
-		{ number: '960+', numberText: 'Events Hosted' },
+		{ number: '5320+', numberText: 'Clientes' },
+		{ number: '350+', numberText: 'Prêmios' },
+		{ number: '960+', numberText: 'Eventos Realizados' },
 	],
 };

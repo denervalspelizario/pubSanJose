@@ -2,10 +2,13 @@ import styled from "styled-components";
 import { Container } from "../../globalStyles";
 import { Link } from "react-router-dom";
 import {Link as LinkScroll} from 'react-scroll';
-import {  backgroundColor } from "../../data/GlobalData"; // importando stilos globais
+/*O LinkScroll funciona permitindo que você defina um destino para o link, 
+  que pode ser um ID de elemento ou um objeto com as propriedades de deslocamento e duração. 
+  Quando o link é clicado, a página rola suavemente até o destino especificado.*/
+import {  dark, light } from "../../data/GlobalData"; // importando stilos globais
 
 export const Nav = styled.nav`
-  background-color: ${({hide}) => (hide?'transparent': backgroundColor)};
+  background-color: ${({hide}) => (hide?'transparent': dark)}; // sendo hide true transparente senão cor global
   margin-top: -80px;
   height: 80px;
   display: flex;
