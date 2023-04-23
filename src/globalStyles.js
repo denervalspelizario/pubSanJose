@@ -14,12 +14,12 @@ const GlobalStyle = createGlobalStyle` // será exportada la embaixo com export 
 ;
 export const Container = styled.div`
   width: 100%;
-  max-width: 1330px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 50px;
 
   @media screen and (max-width: 960px){ // ja adicionando responsividade no container
-    padding: 0 30px;
+    
   }
 `
 ;

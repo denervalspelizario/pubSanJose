@@ -12,15 +12,13 @@ import { useInView } from 'react-intersection-observer'
 
 const Hero = () => {
 
-  const { ref, inView} = useInView({
+  const { ref, inView} = useInView({  //  QUANDO A MARGIN ESTIVER -80PX INVIEW FICARÁ TRUE
     rootMargin: '-80px',
   })
 
-  return <>
-  <HeroSection 
-    id='hero'
-    ref={ref} // referenciando esta section com useInView
-  >  
+  return (
+    <>
+    <HeroSection id='hero'ref={ref} >  
     <Container>
       <MainHeading inverse >Encontre os melhores eventos e encontros conosco.</MainHeading>
       <HeroText>Nós ajudamos você a encontrar todos os seus eventos favoritos em um só lugar.</HeroText>
@@ -33,9 +31,10 @@ const Hero = () => {
     </Container>
   </HeroSection>
   <Navbar 
-    hide={inView} // navbar recebe inView como props
+    hide={inView} // navbar recebe inView como props OLHAR FUNCAO ACIMA 
   />
   </>
+  )
 }
 
 export default Hero;

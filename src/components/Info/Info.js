@@ -13,7 +13,7 @@ import {
 } from './InfoStyles.js';
 import { infoData } from '../../data/InfoData.js'; // importando data
 
-function Info({id}) {
+function Info({ id }){
 
   const { headline, description, bottomLine } = infoData; // importando dados de infoData
 
