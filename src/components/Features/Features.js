@@ -41,7 +41,7 @@ function Features({ id }){
 	/*FUNCÃO QUE DA START A ANIMAÇÃO ALTERANDO COMPONENTES (FEATURETEXTWRAPPER E FEATURECOLUM)
 	 	DO ESTADO ANIMACAOINICIAL PARA O ESTADO ANIMACAO */ 	 
 	useEffect(() => {
-		if (inView) { // quando inView estiver true(elemento foi visto) ou seja rolei até a parte da pagina inicia a animação
+		if (inView) { //  // inView estando true ou seja elementos foram vistos por pelo menos 40%
 			animacao.start({ // start animação
 				scale: 1, // tamanho 100%
 				y: 0, // posiçao original
@@ -50,24 +50,15 @@ function Features({ id }){
 			return;
 		}
 
-		animacao.start({ // start animação
-			scale: 0.2, // tamanho 100%
-			y: 0, // posiçao original
-			opacity: 0, // 100% de opacidade
+		animacao.start({ // // se inView estiver false some
+			scale: 0.2, 
+			y: 0, 
+			opacity: 0, 
 		});
 	}, [inView, animacao]); // QUANDO INVEW ESTIVER TRUE( FOR VISTO POR 40% DO ELEMENTO) DA START A FUNÇÃO
 
 
-	// FUNCAO QUE DESAPARECE ELEMENTOS QUANDO NÃO ESTÂO VISTOS
-//	useEffect(() => {
-//		if (!inView) { // quando inView estiver FALSE
-//			animacao.start({ // start animação
-//				scale: 0.2, 
-//				y: 40,   
-//				opacity: 0, 
-//			});
-//		}
-//	}, [!inView, animacao]); // QUANDO INVEW ESTIVER TRUE( FOR VISTO POR 40% DO ELEMENTO) DA START A FUNÇÃO
+
 
 	return (
 		<FeatureSection id={id}>

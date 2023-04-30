@@ -68,7 +68,7 @@ export const ContentButton = styled(motion.button)`
 	text-transform: uppercase;
 	cursor: pointer;
 	background: none;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? 'black' : '#6a6a6a')};
 	border-radius: 4px;
 	white-space: nowrap;
 	padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
@@ -154,6 +154,7 @@ export const Subtitle = styled(motion.p)`
 	margin-top: ${({ mt }) => (mt ? '1.3rem' : '0')};
 	margin-bottom: 35px;
 	line-height: 24px;
-	color: ${({ inverse }) => (inverse ? '#6a6a6a' : 'white')};
+	padding-top: 10px;
+	color: ${({ inverse }) => (inverse ? '#A9A9A9' : '#6a6a6a')};
 	font-size: clamp(0.8rem, 2vw, 1rem);
 `;

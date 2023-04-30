@@ -14,12 +14,12 @@ import {
 } from './ContentStyles'; // importando estilos
 import { useInView } from 'react-intersection-observer'; // importando useInView para detectar quando elemento aparecer
 import { useAnimation } from 'framer-motion'; // importando useanimation para criar animação
-import ReactModal from 'react-modal';
+import Modal from '../Modal/Modal'; // importando toda a estrutura do modal
 
 
 
 export default function Content ({ 
-  primary,  // props que serão  preenchidas com os dados la do database
+  primary,  // props que serão  preenchidas com os dados la do heroData  - que será adicionando quando importado no HomePages
   topLine, 
   headline, 
   description,
@@ -139,10 +139,11 @@ export default function Content ({
 				</Container>
 			</ContentSec>
 
-			<ReactModal
+			<Modal  // componente de modal
         show={showModal} // state do modal  
         onHide={() => setShowModal(false)} // alterando a state do modal para fecha-lo
       >
+
 				<ContentHeading inverse={inverse}>
           {headline}
         </ContentHeading>
@@ -153,12 +154,13 @@ export default function Content ({
           {description}
         </Subtitle>
 				<ContentButton 
-          inverse={inverse} // receberá como props o reverse la do database 
+           // receberá como props o reverse la do database 
           primary={primary} // receberá como props o primary la do database 
         >
 					Compre aqui seu tickets
 				</ContentButton>
-			</ReactModal>
+			
+			</Modal>
 		</>
 	);
 };
