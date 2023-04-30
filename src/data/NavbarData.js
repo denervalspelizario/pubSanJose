@@ -1,7 +1,7 @@
 
 export const navbarData = [
   {
-    text: 'About',
+    text: 'Sobre',
     id: 'about',
     spy: true,
     duration: 500,
@@ -11,7 +11,7 @@ export const navbarData = [
     to: 'about',
   },
   {
-    text: 'Programs',
+    text: 'Programas',
     spy: true,
     duration: 500,
     smooth: true,
@@ -20,7 +20,7 @@ export const navbarData = [
     to: 'programs',
   },
   {
-    text: 'Events',
+    text: 'Eventos',
     spy: true,
     duration: 500,
     smooth: true,

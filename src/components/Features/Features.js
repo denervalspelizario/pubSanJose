@@ -18,10 +18,13 @@ import { useInView } from 'react-intersection-observer';
 
 function Features({ id }){ 
 	
-  const animacaoInicial = {  // funcao que indica o inicio da FeatureCollumn  
-		scale: 0.2,
-		y: 40,
-		opacity: 0,
+  const animacaoInicial = {  // // objeto que indica estado inicial de animação
+		scale: 0.2, // scala inical  0.2 = 20% 
+		
+		y: 40, //define a posição vertical inicial do elemento, no caso, seu valor é definido como 40,  
+					 //ou seja inicialmente exibido 40 pixels abaixo da sua posição original.
+		
+		opacity: 0, // com 0 de opacidade iniciara invisivel
 	};
 
 	const animacao = useAnimation();  // animacao recebe as propriedades de useAnimation
@@ -34,15 +37,37 @@ function Features({ id }){
      o que significa que se pelo menos 40% do elemento estiver visível na janela do navegador, é considerado que está em vista.
   */
 
+
+	/*FUNCÃO QUE DA START A ANIMAÇÃO ALTERANDO COMPONENTES (FEATURETEXTWRAPPER E FEATURECOLUM)
+	 	DO ESTADO ANIMACAOINICIAL PARA O ESTADO ANIMACAO */ 	 
 	useEffect(() => {
 		if (inView) { // quando inView estiver true(elemento foi visto) ou seja rolei até a parte da pagina inicia a animação
 			animacao.start({ // start animação
-				scale: 1,
-				y: 0,
-				opacity: 1,
+				scale: 1, // tamanho 100%
+				y: 0, // posiçao original
+				opacity: 1, // 100% de opacidade
 			});
+			return;
 		}
-	}, [inView, animacao]);
+
+		animacao.start({ // start animação
+			scale: 0.2, // tamanho 100%
+			y: 0, // posiçao original
+			opacity: 0, // 100% de opacidade
+		});
+	}, [inView, animacao]); // QUANDO INVEW ESTIVER TRUE( FOR VISTO POR 40% DO ELEMENTO) DA START A FUNÇÃO
+
+
+	// FUNCAO QUE DESAPARECE ELEMENTOS QUANDO NÃO ESTÂO VISTOS
+//	useEffect(() => {
+//		if (!inView) { // quando inView estiver FALSE
+//			animacao.start({ // start animação
+//				scale: 0.2, 
+//				y: 40,   
+//				opacity: 0, 
+//			});
+//		}
+//	}, [!inView, animacao]); // QUANDO INVEW ESTIVER TRUE( FOR VISTO POR 40% DO ELEMENTO) DA START A FUNÇÃO
 
 	return (
 		<FeatureSection id={id}>

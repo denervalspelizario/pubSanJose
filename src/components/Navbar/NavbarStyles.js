@@ -5,7 +5,7 @@ import {Link as LinkScroll} from 'react-scroll';
 /*O LinkScroll funciona permitindo que você defina um destino para o link, 
   que pode ser um ID de elemento ou um objeto com as propriedades de deslocamento e duração. 
   Quando o link é clicado, a página rola suavemente até o destino especificado.*/
-import {  dark, light } from "../../data/GlobalData"; // importando stilos globais
+import {  dark  } from "../../data/GlobalData"; // importando stilos globais
 
 export const Nav = styled.nav`
 	background: ${({ hide }) => (hide ? 'transparent' : dark)};

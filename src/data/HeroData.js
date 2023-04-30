@@ -2,79 +2,80 @@ export const heroMain = {
 	reverse: true,
 	inverse: false,
 	topLine: {
-		// text: 'Free',
-		// location: 'Park City, Utah',
+		
 	},
-	headline: 'Find the best events',
+	headline: 'Encontre os melhores eventos',
 	description:
-		'Welcome New Year with Wondergarden on waterfront. Celebrate with world-class international acts, roaming performers, children’s performers and entertainment',
-	buttonLabel: 'Find out more',
+		'Dê as boas-vindas ao Ano Novo com o Wondergarden à beira-mar. Celebre com atos internacionais de classe mundial, artistas itinerantes, artistas infantis e entretenimento.',
+	buttonLabel: 'Descubra mais',
 	imgStart: 'start',
 	img: './assets/heromain1.jpg',
 	start: 'true',
 };
 
-export const heroOne = {
+const heroOne = {
 	reverse: true,
 	inverse: true,
 	topLine: {
-		text: 'Free',
+		text: 'Gratuito',
 		location: 'Park City, Utah',
 	},
 	headline: 'Wondergarden',
 	description:
-		'Welcome New Year with Wondergarden on waterfront. Celebrate with world-class international acts, roaming performers, children’s performers and entertainment',
-	buttonLabel: 'Find out more',
+		'Dê as boas-vindas ao Ano Novo com o Wondergarden à beira-mar. Celebre com atos internacionais de classe mundial, artistas itinerantes, artistas infantis e entretenimento',
+	buttonLabel: 'Descubra mais',
 	imgStart: 'start',
 	img: './assets/hero1.jpg',
 	start: 'true',
 };
 
-export const heroTwo = {
+const heroTwo = {
 	reverse: false,
 	inverse: false,
 	topLine: {
-		text: 'Paid',
+		text: 'Pago',
 		location: 'Hard Rock Stadium, Miami, Florida',
 	},
 	headline: 'St Jerome’s Laneway Festival',
 	description:
-		'Full of fresh, original and ground-breaking music, the festival’s set in the urban playground on the center.',
-	buttonLabel: 'Find out more',
+		'Cheio de música fresca, original e inovadora, o festival acontece no playground urbano no centro da cidade."',
+	buttonLabel: 'Descubra mais',
 	imgStart: 'start',
 	img: './assets/hero6.jpg',
 	start: 'true',
 };
 
-export const heroThree = {
+const heroThree = {
 	reverse: true,
 	inverse: true,
 	topLine: {
 		location: 'New Orleans, Louisiana',
-		text: 'Exclusive',
+		text: 'Exclusivo',
 	},
 	headline: 'Pride Festival',
 	description:
-		'This two-week festival brings together a chocka social calendar and array of events including theatre and cabaret, music, visual arts exhibitions and installations, film and literature',
-	buttonLabel: 'Find out more',
+		'Este festival de duas semanas reúne um calendário social lotado e uma variedade de eventos, incluindo teatro e cabaré, música, exposições de artes visuais e instalações, cinema e literatura',
+	buttonLabel: 'Descubra mais',
 
 	imgStart: '',
 	img: './assets/hero7.jpg',
 	start: 'true',
 };
 
-export const heroFour = {
+const heroFour = {
 	reverse: false,
 	inverse: false,
 	topLine: {
 		location: 'Augusta National Gold Club, Georgia',
-		text: 'Paid',
+		text: 'Pago',
 	},
 	headline: 'Taste of the Night',
 	description:
-		'Try a selection of signature dishes from finest restaurants as you stroll through most glamorous food festival.',
-	buttonLabel: 'Find out more',
+		'Experimente uma seleção de pratos exclusivos dos melhores restaurantes enquanto passeia pelo festival gastronômico mais glamoroso',
+	buttonLabel: 'Descubra mais',
 	imgStart: '',
 	img: './assets/hero3.jpg',
 	start: 'true',
 };
+
+export const heroData = [heroOne, heroTwo, heroThree, heroFour];
