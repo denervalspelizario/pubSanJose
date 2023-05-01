@@ -3,6 +3,7 @@ import GlobalStyle from './globalStyles';
 import HomePages from "./pages/HomePages";
 import SignupPages from "./pages/SignupPages";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from "./components/Footer/Footer";
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Route exact path="/" element={<HomePages />} />
       <Route path="/sign-up" element={<SignupPages />} />    
     </Routes>
+    <Footer />
    </Router> 
    
   );

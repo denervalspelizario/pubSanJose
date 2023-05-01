@@ -4,23 +4,25 @@ import Info from '../components/Info/Info.js';
 import Features from '../components/Features/Features.js';
 import Content from '../components/Content/Content.js';
 import { heroData } from '../data/HeroData.js'
+import Picture from '../components/Picture/Picture.js';
 
 function HomePages(){
   return(
     <>
       <Hero/>
-      <Info id="about"/>
-      <Features id="programs"/>
-      
-      <div id="events">
-        
+      <Info id="sobre"/>
+      <Features id="programas"/>
+       
+      <div id="eventos">
         {heroData.map(( contentData, index ) => ( // renderizando todos as arrays dentro de heroData e repassando via props usando spread operator e o key de referencia 
-          <Content {...contentData} key={index}  />
+          <Content {...contentData} key={index} />
         ))}
-        
       </div>
       
-  
+      <div id="pictures" >
+        <Picture />
+      </div>
+       
     </> 
   );
   

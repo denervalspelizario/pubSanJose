@@ -1,4 +1,4 @@
-export const eventsData = [
+export const pictureData = [
 	{
 		img: './assets/masonry1.jpg',
 	},

@@ -45,14 +45,14 @@ function Navbar({ hide }){
             {navbarData.map((el, index) => ( // renderizando todos objetos de array de navbarData
                                              // index = key e el = dados do objeto 
               <NavItem 
-                key={index}  // recendo uma key de cada onjeto da array
+                key={index}  // recendo uma key de cada objeto da array
               >
                 <NavLinks 
                   spy={true}
                   duration={500}
                   smooth={true}
                   exact='true'
-                  offset={-79}
+                  offset={-78}
                   onClick={() => setShow(false)}
                   to={el.to}
                 >

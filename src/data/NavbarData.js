@@ -8,7 +8,7 @@ export const navbarData = [
     smooth: true,
     exact: 'true',
     offset: -80,
-    to: 'about',
+    to: 'sobre',
   },
   {
     text: 'Programas',
@@ -17,7 +17,7 @@ export const navbarData = [
     smooth: true,
     exact: 'true',
     offset: -80,
-    to: 'programs',
+    to: 'programas',
   },
   {
     text: 'Eventos',
@@ -26,6 +26,16 @@ export const navbarData = [
     smooth: true,
     exact: 'true',
     offset: -80,
-    to: 'events',
-  }
+    to: 'eventos',
+  },
+  {
+    text: 'Fotos',
+    spy: true,
+    duration: 500,
+    smooth: true,
+    exact: 'true',
+    offset: -80,
+    to: 'pictures',
+  },
+  
 ];
