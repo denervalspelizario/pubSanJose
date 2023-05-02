@@ -27,7 +27,7 @@ function Navbar({ hide }){
       <NavLogo to='/' 
         onClick={scroll.scrollToTop} // ao clicar chama funcao scrollToTop que joga rola pagina para o topo
       >
-        <NavIcon  src='./assets/logo.svg' />
+        <NavIcon  src='./assets/pubLogo.png' />
         {websiteName} 
       </NavLogo>
 
@@ -58,6 +58,7 @@ function Navbar({ hide }){
                 >
                   {el.text}
                 </NavLinks>  
+                
               </NavItem>  
             ))}
           </NavMenu>

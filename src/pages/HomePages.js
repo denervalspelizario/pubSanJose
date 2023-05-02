@@ -11,13 +11,15 @@ function HomePages(){
     <>
       <Hero/>
       <Info id="sobre"/>
-      <Features id="programas"/>
-       
-      <div id="eventos">
+      <div id="programacao">
         {heroData.map(( contentData, index ) => ( // renderizando todos as arrays dentro de heroData e repassando via props usando spread operator e o key de referencia 
           <Content {...contentData} key={index} />
         ))}
       </div>
+      
+      <Features id="eventos"/>
+       
+      
       
       <div id="pictures" >
         <Picture />

@@ -1,11 +1,11 @@
 export const infoData = {
-	headline: "Nós temos feito isso por 11 anos.",
+	headline: "Pub sanJose fundado em novembro de 1995",
 	description:
-	"Nós ajudamos você a criar memórias inesquecíveis por meio de experiências multisensoriais, incluindo arte, tecnologia e eventos musicais que ultrapassam todos os limites. Acreditamos em ajudar as pessoas a encontrar os eventos mais emocionantes em suas vidas.",
+	"Tradicional bar da vila Madalena, é referência na noite paulistana e mistura a atmosfera de pub com o espaço e o conforto de uma casa de shows. Com programação dançante de pop rock de terça a sábado e show de stand-up, o local é frequentado por apreciadores da boa música e de serviço de qualidade",
 
 	bottomLine: [
-		{ number: '5320+', numberText: 'Clientes' },
-		{ number: '350+', numberText: 'Prêmios' },
-		{ number: '960+', numberText: 'Eventos Realizados' },
+		{ dado1: '+20', dado2: 'Camarotes' },
+		{ dado1: 'Rock', dado2: 'Bandas covers' },
+		{ dado1: 'Shows', dado2: 'Stand-up' },
 	],
 };

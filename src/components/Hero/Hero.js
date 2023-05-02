@@ -20,12 +20,12 @@ const Hero = () => {
     <>
     <HeroSection id='hero'ref={ref} >  
     <Container>
-      <MainHeading inverse >Encontre os melhores eventos e encontros conosco.</MainHeading>
-      <HeroText>Nós ajudamos você a encontrar todos os seus eventos favoritos em um só lugar.</HeroText>
+      <MainHeading inverse >Venha curtir o melhor happy hour da vila Madalena</MainHeading>
+      <HeroText>Ao som de pop rock e rock clássico um pub com ótimas opções gastronômicas, premiado o melhor chopp pela veja abc e uma ampla carta de cervejas especiais..</HeroText>
 
       <ButtonWrapper> 
         <Link to='sign-up'>
-          <Button big>Encontre seu Evento</Button>
+          <Button big>Acesse o cardápio</Button>
         </Link>
       </ButtonWrapper>
     </Container>

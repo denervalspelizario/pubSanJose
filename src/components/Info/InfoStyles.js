@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 import { Section } from '../../globalStyles';
+import {  irlandaGreen, irlandaOrange, irlandaWhite } from "../../data/GlobalData"; 
+
 
 export const InfoSection = styled(Section)`
-	padding: 80px 0 ;
+	padding: 80px 10% ;
+	
 
   @media screen and (max-width: 768px) {
 		padding: 20px 0px 40px 0;
@@ -19,7 +22,7 @@ export const InfoSection = styled(Section)`
 `;
 export const InfoRow = styled.div`
 	display: grid;
-	width: 100%;
+	width: 90%;
 	grid-template-columns: repeat(2, 1fr);
 	margin-top: 5rem;
 	grid-auto-columns: 2rem;
@@ -27,7 +30,7 @@ export const InfoRow = styled.div`
 	@media screen and (max-width: 768px) {
 		display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
   
     
 	}
@@ -45,7 +48,7 @@ export const InfoColumn = styled.div`
 export const Image = styled.div`
 	height: 600px;
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(2, 3, 5, 1)),
-		url('./assets/heromain1.jpg');
+		url('./assets/pic2.jpg');
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -54,7 +57,7 @@ export const Image = styled.div`
   @media screen and (max-width: 768px) {
     height: 300px;
 	  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(2, 3, 5, 1)), linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(2, 3, 5, 1)),
-		url('./assets/heromain1.jpg');
+		url('./assets/pic2.jpg');
 	  background-size: cover;
 	  display: flex;
 	  align-items: center;
@@ -68,10 +71,10 @@ export const Image = styled.div`
 
 export const InfoHeading = styled.h2`
 	margin: 1rem 0 2rem;
-	font-size: clamp(2.1rem, 7vw, 3rem);
+	font-size: clamp(1.9rem, 6vw, 2.8rem);
 	line-height: 1.1;
 	font-weight: 600;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? irlandaWhite : irlandaOrange)};
 
 	@media screen and (max-width: 311px) {
 		text-align: center;
@@ -128,5 +131,5 @@ export const InfoNumber = styled.div`
 export const InfoText = styled.div`
 	font-weight: 500;
 	margin-top: 0.4rem;
-	color: #b02929;
+	color: ${irlandaOrange};
 `;

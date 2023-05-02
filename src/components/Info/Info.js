@@ -21,7 +21,7 @@ function Info({ id }){
     <InfoRow>
       <InfoColumn>
         <Image 
-          src='./assets/heromain1.jpg' alt=''
+          src='./assets/pic2.jpg' alt=''
         />
       </InfoColumn>
       <InfoColumn>
@@ -32,8 +32,8 @@ function Info({ id }){
           <BottomLine>
             {bottomLine.map((el, index) => (
               <InfoColumn key={index}>
-                <InfoNumber> { el.number } </InfoNumber>
-                <InfoText> { el.numberText } </InfoText>
+                <InfoNumber> { el.dado1 } </InfoNumber>
+                <InfoText> { el.dado2 } </InfoText>
               </InfoColumn>
             ))}
           </BottomLine>

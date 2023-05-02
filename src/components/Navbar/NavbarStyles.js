@@ -5,10 +5,10 @@ import {Link as LinkScroll} from 'react-scroll';
 /*O LinkScroll funciona permitindo que você defina um destino para o link, 
   que pode ser um ID de elemento ou um objeto com as propriedades de deslocamento e duração. 
   Quando o link é clicado, a página rola suavemente até o destino especificado.*/
-import {  dark  } from "../../data/GlobalData"; // importando stilos globais
+import {  dark, irlandaGreen, irlandaOrange, irlandaWhite  } from "../../data/GlobalData"; // importando stilos globais
 
 export const Nav = styled.nav`
-	background: ${({ hide }) => (hide ? 'transparent' : dark)};
+	background: ${({ hide }) => (hide ? 'transparent' : irlandaGreen)};
 	margin-top: -80px;
 	height: 80px;
 	display: flex;
@@ -28,11 +28,11 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-	color: #fff;
+	color: ${irlandaOrange};
 	justify-self: flex-start;
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: 1.3rem;
 	display: flex;
 	align-items: center;
 	z-index: 50;
@@ -104,11 +104,12 @@ export const NavLinks = styled(LinkScroll)`
 	text-decoration: none;
 	padding: 0.5rem 1rem;
 	height: 100%;
-	&.active {
-		text-shadow: 0 0 20px #aa0000, 0 0 15px #aa0000, 0 0 10px #aa0000;
+	
+	&.active { 
+		text-shadow: 0 0 20px ${irlandaOrange}, 0 0 15px  ${irlandaOrange}, 0 0 10px  ${irlandaOrange};
 
 		@media screen and (min-width: 960px) {
-			border-bottom: 2px solid red;
+			border-bottom: 5px solid  ${irlandaOrange};
 		}
 	}
 	&:hover {
