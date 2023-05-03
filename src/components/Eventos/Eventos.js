@@ -11,12 +11,12 @@ import {
 	FeatureImage,
 	FeatureTextWrapper,
 	FeatureMainText,
-} from './FeaturesStyles'; // IMPORTANDO COMPONENTES STYLED
-import { featuresData } from '../../data/FeaturesData';
+} from './EventosStyles.js'; // IMPORTANDO COMPONENTES STYLED
+import { eventosData } from '../../data/EventosData';
 import { useAnimation } from 'framer-motion'; // IMPORTANDO USEANIMATIOM PARA FAZER ANIMAÇÃO NA TELA
 import { useInView } from 'react-intersection-observer';
 
-function Features({ id }){ 
+export default function Eventos({ id }){ 
 	
   const animacaoInicial = {  // // objeto que indica estado inicial de animação
 		scale: 0.2, // scala inical  0.2 = 20% 
@@ -70,11 +70,11 @@ function Features({ id }){
 					animate={animacao} // div recebendo animacao que será ativada assim que inView ficar true
 					transition={{ duration: 0.3 }} // duracao da animação
 				>
-					<FeatureTitle>{featuresData.title}</FeatureTitle>
-					<FeatureMainText>{featuresData.text}</FeatureMainText>
+					<FeatureTitle>{eventosData.title}</FeatureTitle>
+					<FeatureMainText>{eventosData.text}</FeatureMainText>
 				</FeatureTextWrapper>
 				<FeatureWrapper>
-					{featuresData.content.map((el, index) => ( // renderizando todos os objetos de content seguindo a estrutura
+					{eventosData.content.map((el, index) => ( // renderizando todos os objetos de content seguindo a estrutura
 						<FeatureColumn
 							initial={animacaoInicial} //  div recebe scala inicial da animacao
 							animate={animacao} // div recebendo animacao que será ativada assim que inView ficar true
@@ -98,4 +98,4 @@ function Features({ id }){
 	);
 };
 
-export default Features;
+

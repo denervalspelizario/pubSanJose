@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';  // importando motion senão animação não funciona
+import {   irlandaGreen, irlandaOrange, irlandaWhite,   } from "../../data/GlobalData"; // importando stilos globais
 
 export const FeatureSection = styled.div`
 	padding: 140px;
 	position: relative;
 	margin: 0 auto;
-	background-color: ${({ inverse }) => (inverse ? 'white' : '#020305')};
+	background-color: ${({ inverse }) => (inverse ? 'white' : '#000')};
 
 	@media screen and (max-width: 768px) {
 		padding: 50px 10px;
@@ -19,7 +20,7 @@ export const FeatureTitle = styled.h2`
 	line-height: 1.06;
 	letter-spacing: 0.4rem;
 	margin: auto;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? 'black' : irlandaOrange)};
 `;
 
 export const FeatureMainText = styled.p`
@@ -27,14 +28,14 @@ export const FeatureMainText = styled.p`
 	font-size: clamp(1rem, 2vw, 1.2rem);
 	margin: 2rem auto 0;
 	width: 70%;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? irlandaWhite : irlandaWhite)};
 `;
 
 export const FeatureTextWrapper = styled(motion.div)` // usando motion na div que tera animação
 	position: relative;
 	padding: 0 0 20px;
 	margin-bottom: 4rem;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? 'black' : irlandaOrange)};
 `;
 
 export const FeatureWrapper = styled.div`
@@ -58,20 +59,21 @@ export const FeatureColumn = styled(motion.div)` // usando motion na div que ter
 export const FeatureImageWrapper = styled.div`
 	margin-bottom: 1rem;
 	border-radius: 50%;
-	background-color: #111111;
+	background-color: ${irlandaGreen};
 	padding: 30px;
 `;
 
 export const FeatureImage = styled.img`
 	width: 100%;
 	height: 4rem;
+
 `;
 
 export const FeatureName = styled.h3`
 	font-weight: 600;
 	font-size: 1.3rem;
 	letter-spacing: 2px;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? 'black' : irlandaOrange)};
 
 	@media screen and (max-width: 768px) {
 		font-weight: 400;

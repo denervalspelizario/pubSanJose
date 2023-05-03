@@ -27,7 +27,7 @@ export const Container = styled.div`
 export const Section = styled.div`
   color: #FFF;
   padding: 160px;
-  background: ${({inverse})=> (inverse ? irlandaWhite : 'black')}; // se inverse for true sera #FFF se for false será #020305
+  background: ${({inverse})=> (inverse ? irlandaWhite : '#000')}; // se inverse for true sera #FFF se for false será #020305
 `
 ;
 

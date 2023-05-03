@@ -83,7 +83,7 @@ export const InfoHeading = styled.h2`
 
 export const InfoDesc = styled.div`
 	margin-bottom: 3rem;
-	color: ${({ inverse }) => (inverse ? '#6a6a6a' : 'white')};
+	color: ${({ inverse }) => (inverse ? '#6a6a6a' : irlandaWhite)};
 	font-size: 1.1rem;
 	font-size: clamp(1rem, 2vw, 1.1rem);
 
@@ -123,6 +123,7 @@ export const InfoNumber = styled.div`
 	font-weight: 700;
 	font-size: 1.3rem;
 	letter-spacing: 0.04rem;
+	color: ${irlandaWhite};
   @media screen and (max-width: 768px) {
 		font-size: 1rem;
 	}
