@@ -4,7 +4,7 @@ import { MasonryGrid, EventImageWrapper, Image, EventHeading } from './PictureSt
 import { useInView } from 'react-intersection-observer'; // importando useInView para detectar quando elemento aparecer
 import { useAnimation } from 'framer-motion'; // importando useanimation para criar animação
 import Modal from '../Modal/Modal'; 
-import {  Img, ImgWrapper } from '../Content/ContentStyles';
+import {  Img, ImgWrapper } from '../Programacao/ProgramacaoStyles';
 import { pictureData } from '../../data/PictureData'; // importando toda a estrutura do modal
 
 export default function Picture() {
@@ -41,7 +41,7 @@ export default function Picture() {
 	return (
 		<>
 			<Section>
-				<Container>
+				<Container  id='pictures'>
 
 					<EventHeading
 						initial={{ opacity: 0, scale: 0.3 }}

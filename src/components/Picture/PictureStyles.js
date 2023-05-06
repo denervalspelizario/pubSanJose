@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import {  irlandaOrange  } from "../../data/GlobalData"; // importando stilos globais
 
 export const MasonryGrid = styled.div`
 	display: grid;
@@ -28,16 +29,13 @@ export const EventImageWrapper = styled(motion.div)`
 		grid-column: span 2;
 	}
 	&.tall {
-		grid-row: span 2;
+		grid-row: span 1;
 	}
-	&.big {
-		grid-column: span 2;
-		grid-row: span 2;
-	}
+	
 
 	&:before {
 		background: rgb(0, 0, 0, 0.7);
-		content: 'Find more';
+		content: 'clique aqui';
 		position: absolute;
 		width: 100%;
 		z-index: 1;
@@ -65,7 +63,7 @@ export const EventImageWrapper = styled(motion.div)`
 export const EventHeading = styled(motion.h2)`
 	font-size: clamp(3.5rem, 10vw, 10rem);
 	margin-bottom: 2rem;
-	color: #1a1f3d;
+	color: ${irlandaOrange};
 	width: 100%;
 	-webkit-letter-spacing: 4px;
 	-moz-letter-spacing: 4px;

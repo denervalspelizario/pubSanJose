@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroSection = styled.section`
   height: 100vh;
-  background: linear-gradient( to bottom, rgba(0,0,0, 0.6), rgba(0,0,0, 0.9)), url("./assets/pichero.jpg"); //  escurecendo a imagem de baixo pra cima a imagem
+  background: linear-gradient( to bottom, rgba(0,0,0, 0.6), rgba(0,0,0, 0.9)), url("./assets/pichero.png"); //  escurecendo a imagem de baixo pra cima a imagem
   background-position: center;
   background-size: cover;
   display: flex;

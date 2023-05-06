@@ -1,41 +1,35 @@
 export const pictureData = [
 	{
-		img: './assets/masonry1.jpg',
+		img: './assets/pic01.png',
 	},
 	{
-		img: './assets/masonry2.jpg',
-		class: 'tall',
+		img: './assets/pic02.png',
+		class: 'wide',
 	},
 
 	{
-		img: './assets/masonry3.jpg',
+		img: './assets/pic03.png',
 	},
 	{
-		img: './assets/masonry11.jpg',
+		img: './assets/pic04.png',
 		class: 'wide',
 	},
 	{
-		img: './assets/masonry4.jpg',
-		class: 'big',
+		img: './assets/pic05.png',
+		
 	},
 	{
-		img: './assets/masonry5.jpg',
+		img: './assets/pic06.png',
 	},
 	{
-		img: './assets/masonry6.jpg',
-		class: 'tall',
+		img: './assets/pic07.png',
+		
 	},
 	{
-		img: './assets/masonry10.jpg',
-		class: 'tall',
+		img: './assets/pic08.png',
+		class: 'wide',
 	},
 	{
-		img: './assets/masonry7.jpg',
-	},
-	{
-		img: './assets/masonry8.jpg',
-	},
-	{
-		img: './assets/masonry9.jpg',
+		img: './assets/pic01.png',
 	},
 ];

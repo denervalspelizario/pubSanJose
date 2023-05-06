@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import {  irlandaGreen, irlandaOrange, irlandaWhite } from "../../data/GlobalData"; 
 
 export const ContentSec = styled.div`
 	padding: 60px 0;
@@ -74,13 +75,13 @@ export const ContentButton = styled(motion.button)`
 	padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
 	font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
 	outline: none;
-	border: 2px solid #aa0000;
+	border: 2px solid ${irlandaOrange};
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
 
 	&:before {
-		background: #aa0000;
+		background: ${irlandaOrange};
 		content: '';
 		position: absolute;
 		top: 50%;
@@ -107,7 +108,7 @@ export const ImgWrapper = styled(motion.div)`
 	max-height: 700px;
 	justify-content: center;
 	position: relative;
-	background-color: #aa0000;
+	background-color: ${irlandaOrange};
 	padding: 4px 0;
 	max-height: 40%;
 `;
@@ -119,7 +120,7 @@ export const TopLine = styled(motion.span)`
 	letter-spacing: 1.4px;
 	margin-bottom: 0.8rem;
 
-	background-color: #aa0000;
+	background-color: ${irlandaOrange};
 	color: #fff;
 	padding: 5px 10px;
 	border-radius: 5px;
@@ -142,7 +143,7 @@ export const ContentHeading = styled(motion.h2)`
 	font-size: clamp(1.3rem, 7vw, 3rem);
 	line-height: 1.1;
 	font-weight: 600;
-	color: ${({ inverse }) => (inverse ? 'black' : 'white')};
+	color: ${({ inverse }) => (inverse ? irlandaGreen : irlandaOrange)};
 
 	@media screen and (max-width: 768px) {
 		text-align: center;

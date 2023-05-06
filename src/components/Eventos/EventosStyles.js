@@ -64,7 +64,7 @@ export const FeatureImageWrapper = styled.div`
 `;
 
 export const FeatureImage = styled.img`
-	width: 100%;
+	width: 6rem;
 	height: 4rem;
 
 `;
@@ -73,6 +73,7 @@ export const FeatureName = styled.h3`
 	font-weight: 600;
 	font-size: 1.3rem;
 	letter-spacing: 2px;
+	text-align: center;
 	color: ${({ inverse }) => (inverse ? 'black' : irlandaOrange)};
 
 	@media screen and (max-width: 768px) {

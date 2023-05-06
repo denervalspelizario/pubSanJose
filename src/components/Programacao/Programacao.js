@@ -11,14 +11,14 @@ import {
 	ImgWrapper,
 	Img,
 	ContentColumn,
-} from './ContentStyles'; // importando estilos
+} from './ProgramacaoStyles'; // importando estilos
 import { useInView } from 'react-intersection-observer'; // importando useInView para detectar quando elemento aparecer
 import { useAnimation } from 'framer-motion'; // importando useanimation para criar animação
 import Modal from '../Modal/Modal'; // importando toda a estrutura do modal
 
 
 
-export default function Content ({ 
+export default function Programacao ({ 
   primary,  // props que serão  preenchidas com os dados la do heroData  - que será adicionando quando importado no HomePages
   topLine, 
   headline, 
